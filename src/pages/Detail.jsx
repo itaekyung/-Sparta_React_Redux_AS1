@@ -1,6 +1,22 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
+import styled from "styled-components";
+
+const TestWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+`;
+const DetailBox = styled.div`
+  border: 1px solid skyblue;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+`;
 
 function Detail() {
   const todo = useSelector((state) => state.todos);
@@ -10,12 +26,15 @@ function Detail() {
   });
   console.log(param);
   return (
-    <div>
-      <div>ID:{param.id}</div>
-      <Link to="/">이전으로</Link>
-      <div>{detailTodo.title}</div>
-      <div>{detailTodo.content}</div>
-    </div>
+    <TestWrapper>
+      <DetailBox>
+        {" "}
+        <Link to="/">이전으로</Link>
+        <div> ID:{param.id}</div>
+        <div>{detailTodo.title}</div>
+        <div>{detailTodo.content}</div>
+      </DetailBox>
+    </TestWrapper>
   );
 }
 

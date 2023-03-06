@@ -29,6 +29,14 @@ function Cards({ item }) {
             >
               {item.isDone ? "취소" : "완료"}
             </button>
+            <button
+              onClick={() => {
+                setEdit(!edit);
+                dispatch(updateTodo(item.id, editTitle, editContent));
+              }}
+            >
+              수정하기
+            </button>
           </div>
         </div>
       ) : (
@@ -49,16 +57,16 @@ function Cards({ item }) {
               setEditContent(e.target.value);
             }}
           />
+          <button
+            onClick={() => {
+              setEdit(!edit);
+              dispatch(updateTodo(item.id, editTitle, editContent));
+            }}
+          >
+            수정완료
+          </button>
         </div>
       )}
-      <button
-        onClick={() => {
-          setEdit(!edit);
-          dispatch(updateTodo(item.id, editTitle, editContent));
-        }}
-      >
-        {edit ? "수정완료" : "수정하기"}
-      </button>
     </div>
   );
 }

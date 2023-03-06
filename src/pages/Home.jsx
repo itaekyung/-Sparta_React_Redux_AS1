@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-
 import { useNavigate, Link } from "react-router-dom";
-
 import { Wrap, WrapBox, ArticleBox } from "../globalcss";
 import Nav from "../component/Nav";
 import Form from "../component/Form";
