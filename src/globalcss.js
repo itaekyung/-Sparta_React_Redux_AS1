@@ -34,7 +34,6 @@ export const ArticleBox = styled.article`
   margin-right: 40px;
   margin-bottom: 10px;
 `;
-
 export const StForm = styled.form`
   margin-top: 10px;
   display: flex;
@@ -45,4 +44,33 @@ export const StForm = styled.form`
   border-radius: 10px;
   background-color: wheat;
   height: 100px;
+`;
+
+export const TestWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+`;
+export const DetailBox = styled.div`
+  border: 1px solid skyblue;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+`;
+
+export const StInput = styled.input`
+  width: 100px;
+  height: 30px;
+  &:hover {
+    background-color: brown;
+    color: white;
+  }
+`;
+
+export const TodoBoxWrap = styled.div`
+  display: flex;
+  flex-wrap: wrap;
 `;

@@ -1,22 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
-import styled from "styled-components";
-
-const TestWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-`;
-const DetailBox = styled.div`
-  border: 1px solid skyblue;
-  width: 300px;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-`;
+import { TestWrapper, DetailBox } from "../globalcss";
 
 function Detail() {
   const todo = useSelector((state) => state.todos);
