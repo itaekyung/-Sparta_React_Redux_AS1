@@ -33,7 +33,6 @@ export const ArticleBox = styled.article`
   padding: 20px;
   margin-right: 40px;
   margin-bottom: 10px;
-  white-space: nowrap;
   overflow: hidden;
 `;
 export const StForm = styled.form`
@@ -61,7 +60,6 @@ export const DetailBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  white-space: nowrap;
   overflow: hidden;
 `;
 
