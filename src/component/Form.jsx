@@ -21,24 +21,32 @@ function Form() {
       }}
     >
       <div>
-        제목 :
+        제목 : &nbsp;
         <input
           required
           type="text"
           value={todo.title}
           onChange={handler}
           name="title"
+          maxLength={10}
+          placeholder={"최대 10글자(입력해야)"}
         />
-        내용 :
+        &nbsp; 내용 : &nbsp;
         <input
           required
           type="text"
           value={todo.content}
           onChange={handler}
           name="content"
+          maxLength={20}
+          placeholder={"최대 20글자(추가돼요)"}
         />
       </div>
-      <StInput type="submit" value="추가하기" />
+      <StInput
+        type="submit"
+        value="추가하기"
+        disabled={!todo.title || !todo.content}
+      />
     </StForm>
   );
 }

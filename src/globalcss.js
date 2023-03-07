@@ -34,6 +34,8 @@ export const ArticleBox = styled.article`
   margin-right: 40px;
   margin-bottom: 10px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 `;
 export const StForm = styled.form`
   margin-top: 10px;
@@ -61,6 +63,8 @@ export const DetailBox = styled.div`
   flex-direction: column;
   justify-content: space-around;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 `;
 
 export const StInput = styled.input`

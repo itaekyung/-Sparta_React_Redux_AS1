@@ -5,9 +5,9 @@ import { StNav } from "../globalcss";
 function Nav() {
   return (
     <StNav>
-      <div>My Todo List</div>
+      <div>뚜두뚜두 투두리스트 (스타일링은 나중에,,)</div>
       <div></div>
-      <div>React</div>
+      <div>@_dlxorud</div>
     </StNav>
   );
 }

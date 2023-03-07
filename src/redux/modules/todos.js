@@ -38,14 +38,14 @@ export const updateTodo = (id, editTitle, editContent) => {
 const initialState = [
   {
     id: 1, // id는 모두 고유값이어야 합니다.
-    title: "CRUD 기능 구현하기",
-    content: "리덕스 흐름 파악하고, 블로그 포스팅하기",
+    title: "혜연이랑 여행가기",
+    content: "일본 도쿄랑 오사카 가서 실컷놀기",
     isDone: false,
   },
   {
     id: 2, // id는 모두 고유값이어야 합니다.
-    title: "스타일 컴포넌트",
-    content: "너무 어려워요 살려주세요",
+    title: "혜연이랑 맛있는 거 먹기",
+    content: "전국 맛집 투어 다니기",
     isDone: false,
   },
 ];

@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
+import styled from "styled-components";
 import { deleteTodo, moveTodo, updateTodo } from "../redux/modules/todos";
 
 function Cards({ item }) {
@@ -40,7 +41,7 @@ function Cards({ item }) {
           </div>
         </div>
       ) : (
-        <div>
+        <UpdateDiv>
           제목 :
           <input
             type="text"
@@ -65,10 +66,15 @@ function Cards({ item }) {
           >
             수정완료
           </button>
-        </div>
+        </UpdateDiv>
       )}
     </div>
   );
 }
+
+const UpdateDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
 export default Cards;
