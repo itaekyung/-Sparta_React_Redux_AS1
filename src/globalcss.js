@@ -33,6 +33,8 @@ export const ArticleBox = styled.article`
   padding: 20px;
   margin-right: 40px;
   margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
 `;
 export const StForm = styled.form`
   margin-top: 10px;
@@ -59,18 +61,25 @@ export const DetailBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  white-space: nowrap;
+  overflow: hidden;
 `;
 
 export const StInput = styled.input`
   width: 100px;
   height: 30px;
   &:hover {
-    background-color: brown;
+    background-color: skyblue;
     color: white;
   }
+  border-radius: 10px;
+  border: 0px;
 `;
 
 export const TodoBoxWrap = styled.div`
   display: flex;
   flex-wrap: wrap;
+`;
+export const Section = styled.section`
+  padding: 30px;
 `;

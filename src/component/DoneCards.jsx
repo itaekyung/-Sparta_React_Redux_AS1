@@ -2,10 +2,11 @@ import React from "react";
 import { ArticleBox, TodoBoxWrap } from "../globalcss";
 import { Link } from "react-router-dom";
 import Cards from "./Cards";
+import { Section } from "../globalcss";
 
 function DoneCards({ todo }) {
   return (
-    <section>
+    <Section>
       <h2>Done..!🎉</h2>
       <TodoBoxWrap>
         {todo.map((item) => {
@@ -18,7 +19,7 @@ function DoneCards({ todo }) {
             );
         })}
       </TodoBoxWrap>
-    </section>
+    </Section>
   );
 }
 

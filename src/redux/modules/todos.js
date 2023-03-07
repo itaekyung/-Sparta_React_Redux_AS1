@@ -54,8 +54,9 @@ const initialState = [
 const todos = (state = initialState, action) => {
   switch (action.type) {
     case SUBMIT:
+      // const testId = useId(); 컴포넌트에서 생성해서 페이로드로 넘겨주기
       const newTodos = {
-        id: Math.random(),
+        id: Date.now(),
         title: action.payload.title,
         content: action.payload.content,
         isDone: false,

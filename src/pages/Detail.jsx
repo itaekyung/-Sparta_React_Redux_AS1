@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { Link, useNavigate, useParams } from "react-router-dom";
+import Nav from "../component/Nav";
 import { TestWrapper, DetailBox } from "../globalcss";
 
 function Detail() {
@@ -22,7 +23,7 @@ function Detail() {
       <DetailBox>
         {" "}
         <Link to="/">이전으로</Link>
-        <div> ID:{param?.id}</div>
+        <div> ID:{param.id}</div>
         <div>{detailTodo?.title}</div>
         <div>{detailTodo?.content}</div>
       </DetailBox>

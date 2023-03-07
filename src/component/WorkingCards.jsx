@@ -1,12 +1,12 @@
 import React from "react";
-import { ArticleBox, TodoBoxWrap } from "../globalcss";
+import { ArticleBox, TodoBoxWrap, Section } from "../globalcss";
 import { Link, useNavigate } from "react-router-dom";
 import Cards from "../component/Cards";
 
 function WorkingCards({ todo }) {
   const navigate = useNavigate();
   return (
-    <section>
+    <Section>
       <h2>Working...🔥</h2>
       <TodoBoxWrap>
         {todo.map((item) => {
@@ -26,7 +26,7 @@ function WorkingCards({ todo }) {
             );
         })}
       </TodoBoxWrap>
-    </section>
+    </Section>
   );
 }
 
